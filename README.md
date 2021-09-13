@@ -34,6 +34,7 @@ List of programs used for all analyses. Add versions and URLs later.
 * Intervene
 * Coolbox
 * gProfiler
+* BLAST
 * BLAT
 * MELT
 * Qualimap
