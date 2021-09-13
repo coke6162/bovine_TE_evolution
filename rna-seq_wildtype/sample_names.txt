@@ -27,10 +27,10 @@ placeholder	leukocyte_UT_R3
 placeholder	leukocyte_IFNG_2h_R1
 placeholder	leukocyte_IFNG_2h_R2
 placeholder	leukocyte_IFNG_2h_R3
-SRR7478850	AM_CTRL_Animal1
-SRR7478852	AM_CTRL_Animal2
-SRR7478854	AM_CTRL_Animal3
-SRR7478856	AM_CTRL_Animal4
+SRR7478850	AM_UT_Animal1
+SRR7478852	AM_UT_Animal2
+SRR7478854	AM_UT_Animal3
+SRR7478856	AM_UT_Animal4
 SRR7478851	AM_MB_Animal1
 SRR7478853	AM_MB_Animal2
 SRR7478855	AM_MB_Animal3
