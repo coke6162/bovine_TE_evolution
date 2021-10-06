@@ -7,7 +7,7 @@ Kelly, C. J., Chitko-McKown, C. & Chuong, E. B. Ruminant-specific retrotransposo
 All raw and processed sequencing data generated in this study have been submitted to the NCBI Gene Expression Omnibus (GEO) with accession number [GSE185082](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185082).
 
 ## UCSC sessions:
-[Here](https://genome.ucsc.edu/s/coke6162/bosTau9_20211006_bovine_TE_evolution_draft_wildtype_TLR4) is drafted UCSC genome browser session that contains the following:
+[Here](https://genome.ucsc.edu/s/coke6162/bosTau9_20211006_bovine_TE_evolution_draft_wildtype_TLR4) is a drafted UCSC genome browser session that contains the following:
 * RNA-seq from wild type MDBK, BL3.1, monocytes, and leukocytes
 * ATAC-seq from wild type MDBK
 * CUT&RUN from wild type MDBK
