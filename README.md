@@ -3,11 +3,16 @@
 ## Scripts and files used in:
 Add citation & biorxiv here
 
-## GEO links:
-Add GEO link
+## Data availability:
+All raw and processed sequencing data generated in this study have been submitted to the NCBI Gene Expression Omnibus (GEO) with accession number [GSE185082](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185082).
 
 ## UCSC sessions:
-Add UCSC sessions
+[Here](https://genome.ucsc.edu/s/coke6162/bosTau9_20211006_bovine_TE_evolution_draft_wildtype_TLR4) is drafted UCSC genome browser session that contains the following:
+* RNA-seq from wild type MDBK, BL3.1, monocytes, and leukocytes
+* ATAC-seq from wild type MDBK
+* CUT&RUN from wild type MDBK
+
+[Here](https://genome.ucsc.edu/s/coke6162/bosTau9_20211006_bovine_TE_evolution_draft_KO_LOC510185) is a drafted UCSC genome browser session containing RNA-seq for MDBKs with deletions for MER41_BT.IFNAR2 and MER41_BT.IL2RB.
 
 ## Programs used:
 List of programs used for all analyses. Add versions and URLs later.
@@ -39,6 +44,7 @@ List of programs used for all analyses. Add versions and URLs later.
 * MELT
 * Qualimap
 * Samplot
+* Sambamba
 
 ## Public databases:
 * UCSC (https://genome.ucsc.edu/)
