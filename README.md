@@ -1,7 +1,7 @@
 # Bovine TE Evolution
 
 ## Scripts and files used in:
-Add citation & biorxiv here
+Kelly, C. J., Chitko-McKown, C. & Chuong, E. B. Ruminant-specific retrotransposons shape regulatory evolution of bovine immunity. bioRxiv 2021.10.01.462810 (2021) doi:10.1101/2021.10.01.462810.
 
 ## Data availability:
 All raw and processed sequencing data generated in this study have been submitted to the NCBI Gene Expression Omnibus (GEO) with accession number [GSE185082](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185082).
