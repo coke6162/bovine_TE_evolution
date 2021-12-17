@@ -3,7 +3,7 @@
 # Script for running bbduk with paired-end data
 
 # Example usage:
-# sbatch --array 0-69 trim_adapters_bbduk.sbatch
+# sbatch --array 0-69 bbduk.sbatch.sbatch
 
 # General settings
 #SBATCH -p short
@@ -26,7 +26,7 @@ module load bbmap/38.05
 # Define query files
 # Removes suffix to generate a unique identifier for each pair of files
 # Modify to fit input file name if necessary
-queries=($(ls *.fastq.gz | sed --expression='s/_1.fastq.gz//g' | sed --expression='s/_2.fastq.gz//g' | uniq))
+queries=($(ls *.fastq.gz | sed 's/_1.fastq.gz//g' | sed 's/_2.fastq.gz//g' | uniq))
 
 # Define adapter file
 adapterFile=/opt/bbmap/38.05/resources/adapters.fa
@@ -40,8 +40,8 @@ echo $(date +"[%b %d %H:%M:%S] Running bbduk...")
 bbduk.sh -Xmx8g \
 in1=${queries[$SLURM_ARRAY_TASK_ID]}_1.fastq.gz \
 in2=${queries[$SLURM_ARRAY_TASK_ID]}_2.fastq.gz \
-out1=${queries[$SLURM_ARRAY_TASK_ID]}_1_bbduk.fastq.gz \
-out2=${queries[$SLURM_ARRAY_TASK_ID]}_2_bbduk.fastq.gz \
+out1=${queries[$SLURM_ARRAY_TASK_ID]}_1_trimmed.fastq.gz \
+out2=${queries[$SLURM_ARRAY_TASK_ID]}_2_trimmed.fastq.gz \
 ref=${adapterFile} \
 ktrim=r k=31 mink=11 hdist=1 tpe tbo \
 qtrim=r trimq=10 \
