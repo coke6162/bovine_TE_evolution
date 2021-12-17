@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script for generating fastqc reports for trimmed fastq files
+# Script for generating fastq quality control reports
 
 # Example usage:
 # sbatch --array 0-137 fastqc.sbatch
@@ -24,13 +24,13 @@ module load fastqc/0.11.8
 numThreads=2
 
 # Define query files
-queries=($(ls *_bbduk.fastq.gz))
+queries=($(ls *.fastq.gz))
 
 # Run FastQC
 pwd; hostname; date
 
 echo "Processing file: "${queries[$SLURM_ARRAY_TASK_ID]}
-echo $(date +"[%b %d %H:%M:%S] Running fastqc on trimmed fastq files...")
+echo $(date +"[%b %d %H:%M:%S] Running fastqc on fastq files...")
 
 fastqc -o fastqc_out -f fastq -t ${numThreads} ${queries[$SLURM_ARRAY_TASK_ID]}
 
