@@ -3,6 +3,7 @@
 # Script for aggregating fastqc reports using multiqc
 # If multiqc cannot locate your files, include '--bind <filesystem>'
 # For example, if your files are on /Users, use 'singularity exec ${multiqc} --bind /Users'
+# Alternatively, install multiqc through pip and remove line 34
 
 # Example usage:
 # sbatch multiqc.sbatch
