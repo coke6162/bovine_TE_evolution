@@ -27,7 +27,7 @@ module load hisat2/2.1.0 samtools/1.10
 
 # Define query files
 # Removes suffix to generate a unique identifier for each pair of files
-queries=($(ls *_bbduk.fastq.gz | sed 's/_1_bbduk.fastq.gz//g' | sed 's/_2_bbduk.fastq.gz//g' | uniq))
+queries=($(ls *_trimmed.fastq.gz | sed 's/_1_trimmed.fastq.gz//g' | sed 's/_2_trimmed.fastq.gz//g' | uniq))
 
 # Align trimmed reads
 pwd; hostname; date
@@ -40,8 +40,8 @@ hisat2 \
 --rna-strandness RF \
 --no-softclip \
 -x index/bosTau9 \
--1 ${queries[$SLURM_ARRAY_TASK_ID]}_1_bbduk.fastq.gz \
--2 ${queries[$SLURM_ARRAY_TASK_ID]}_2_bbduk.fastq.gz \
+-1 ${queries[$SLURM_ARRAY_TASK_ID]}_1_trimmed.fastq.gz \
+-2 ${queries[$SLURM_ARRAY_TASK_ID]}_2_trimmed.fastq.gz \
 | samtools view -q 10 -Sb - \
 | samtools sort -@ ${numThreads} - -o ${queries[$SLURM_ARRAY_TASK_ID]}.sorted.uniq.bam
 
