@@ -43,7 +43,7 @@ head(countdata)
 
 # Assign untreated vs treat samples
 # This assumes that columns are in the same order as that specified in bam_order.txt
-(treatment <- factor(c(rep(rep("UT", 2), rep("IFNG", 2)), 4)))
+(treatment <- factor(c(rep(c(rep("UT", 2), rep("IFNG", 2)), 4))))
 
 # Assign WT vs KO samples
 # This assumes that columns are in the same order as that specified in bam_order.txt

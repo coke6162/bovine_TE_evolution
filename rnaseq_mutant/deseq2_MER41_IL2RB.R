@@ -34,7 +34,7 @@ colnames(countdata) <- gsub("\\X.Users.path.to.working.directory.", "", colnames
 colnames(countdata)
 
 # Extract only columns containing "ctrl" or "IL2RB" - necessary if running from a larger counts table
-countdata <- select(countdata, contains("ctrl") | contains("IFNAR2_KO1" | contains("IL2RB"))
+countdata <- select(countdata, contains("ctrl") | contains("IFNAR2_KO1") | contains("IL2RB"))
 colnames(countdata)
 
 # Convert countdata table into a matrix - necessary for running DESeq2.
@@ -43,7 +43,7 @@ head(countdata)
 
 # Assign untreated vs treat samples
 # This assumes that columns are in the same order as that specified in bam_order.txt
-(treatment <- factor(c(rep(rep("UT", 2), rep("IFNG", 2)), 2), rep("UT", 1), rep("IFNG", 1), 3))
+(treatment <- factor(c(rep(c(rep("UT", 2), rep("IFNG", 2)), 2), rep(c(rep("UT", 1), rep("IFNG", 1)), 3))))
 
 # Assign WT vs KO samples
 # This assumes that columns are in the same order as that specified in bam_order.txt
