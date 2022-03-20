@@ -24,7 +24,7 @@ module load fastqc/0.11.8
 numThreads=2
 
 # Define query files
-queries=($(ls *.fastq.gz))
+queries=($(ls *_trimmed.fastq.gz))
 
 # Run FastQC
 pwd; hostname; date

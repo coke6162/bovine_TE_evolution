@@ -33,6 +33,6 @@ echo $(date +"[%b %d %H:%M:%S] Running MultiQC...")
 
 singularity exec ${multiqc} \
 multiqc \
-${inDir}/*.zip
+fastqc_out/*.zip
 
 echo $(date +"[%b %d %H:%M:%S] Done")

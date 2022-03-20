@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script for aligning trimmed reads to the reference genome using hisat2
-# hisat2 index located in a subdirectory named "index"
+# hisat2 index located in a subdirectory named "index" (not supplied)
 # all hisat2 index files share the same "bosTau9" prefix
 
 # Example usage:
