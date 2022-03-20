@@ -15,7 +15,7 @@ A typical CUT&RUN workflow looks like this:
 10. merge_peak_files.sbatch
 11. bdg_to_bigwig.sbatch
 12. merge_peak_files_by_pulldown.sbatch
-13. compute_bam_matrix
+13. compute_bam_matrix.sbatch
 14. deseq2.R (one supplied for each of four pulldowns)
 
 Required packages:
