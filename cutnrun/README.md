@@ -32,5 +32,6 @@ Required packages:
 For a list of all R packages used in this analysis, see session_info.txt.
 
 Note that the soft masked bosTau9 assembly and RefSeq gene annotation files may be downloaded through UCSC:
-* bosTau9 - http://hgdownload.soe.ucsc.edu/goldenPath/bosTau9/bigZips/genes/bosTau9.fa.gz
+* bosTau9 - http://hgdownload.soe.ucsc.edu/goldenPath/bosTau9/bigZips/bosTau9.fa.gz
+* bosTau9.chrom.sizes - http://hgdownload.soe.ucsc.edu/goldenPath/bosTau9/bigZips/bosTau9.chrom.sizes
 * bosTau9.ncbiRefSeq.gtf - http://hgdownload.soe.ucsc.edu/goldenPath/bosTau9/bigZips/genes/bosTau9.ncbiRefSeq.gtf
