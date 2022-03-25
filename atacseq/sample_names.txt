@@ -1,0 +1,5 @@
+#accession	name
+placeholder	MDBK_UT_ATAC_R1
+placeholder	MDBK_UT_ATAC_R2
+placeholder	MDBK_IFNG_4h_ATAC_R1
+placeholder	MDBK_IFNG_4h_ATAC_R2
