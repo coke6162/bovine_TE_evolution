@@ -3,13 +3,13 @@ All bash scripts were written to be run using SLURM on the HPC cluster at the Un
 These scripts assume all samples are named as described sample_names.txt (column 2). For simplicity all input and output files are written to the same directory.
 
 A typical ATAC-seq workflow looks like this:
-1. [bbduk.sbatch]()
-2. [fastqc.sbatch]()
-3. [multiqc.sbatch]()
-4. [bowtie2.sbatch]()
-5. [sambamba_markdup.sbatch]()
-6. [macs2_PE.sbatch]()
-7. [bdg_to_bigwig.sbatch]()
+1. [bbduk.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/bbduk.sbatch)
+2. [fastqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/fastqc.sbatch)
+3. [multiqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/multiqc.sbatch)
+4. [bowtie2.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/bowtie2.sbatch)
+5. [sambamba_markdup.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/sambamba_markdup.sbatch)
+6. [macs2_PE.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/macs2_PE.sbatch)
+7. [bdg_to_bigwig.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/bdg_to_bigwig.sbatch)
 
 Required packages:
 * BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
