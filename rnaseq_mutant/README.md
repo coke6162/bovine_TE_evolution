@@ -5,13 +5,13 @@ These scripts assume all samples are named as described sample_names.txt (column
 Note: the following samples were treated as controls for the DESeq2 analysis: "Cas12_ctrl" and "MER41_IFNAR2_KO1". The following samples were treated as clonal deletions/knockouts for IFNAR2: "MER41_IFNAR2_KO2" and "MER41_IFNAR2_KO3". The following samples were treated as clonal deletions/knockouts for LOC510185/IL2RB: "MER41_IL2RB_KO1", "MER41_IL2RB_KO2", "MER41_IL2RB_KO3". Although labeled as "MER41_IFNAR2_KO1", these samples do not harbor the MER41_BT.IFNAR2 deletion and are therefore used as independent biological replicates in addition to the "Cas12_ctrl" samples.
 
 A typical RNAseq workflow looks like this:
-1. [bbduk.sbatch]()
-2. [fastqc.sbatch]()
-3. [multiqc.sbatch]()
-4. [hisat2.sbatch]()
-5. [bam_to_bigwig.sbatch]()
-6. [featureCounts.sbatch]()
-7. [deseq2.R]()
+1. [bbduk.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/bbduk.sbatch)
+2. [fastqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/fastqc.sbatch)
+3. [multiqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/multiqc.sbatch)
+4. [hisat2.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/hisat2.sbatch)
+5. [bam_to_bigwig.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/bam_to_bigwig.sbatch)
+6. [featureCounts.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/featureCounts.sbatch)
+7. [deseq2_MER41_IL2RB.R](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/deseq2_MER41_IL2RB.R) and [deseq2_MER41_IFNAR2.R](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_mutant/deseq2_MER41_IFNAR2.R)
 
 Required packages:
 * BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
