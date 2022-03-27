@@ -5,7 +5,7 @@
 # all bwa index files share the same "bosTau9" prefix
 
 # Example usage:
-# sbatch --array 0-34 bwa.sbatch
+# sbatch --array 0-34 bwa_mem.sbatch
 
 # General settings
 #SBATCH -p short
