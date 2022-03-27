@@ -3,31 +3,31 @@ All bash scripts were written to be run using SLURM on the HPC cluster at the Un
 These scripts assume all samples are named as described sample_names.txt (column 2). For simplicity all input and output files are written to the same directory.
 
 A typical CUT&RUN workflow looks like this:
-1. bbduk.sbatch
-2. fastqc.sbatch
-3. multiqc.sbatch
-4. bwa_mem.sbatch
-5. merge_bams_histone_tf.sbatch
-6. merge_bams_IgG.sbatch
-7. subset_bam_by_length.sbatch
-8. macs2_SE.sbatch
-9. macs2_PE.sbatch
-10. merge_peak_files.sbatch
-11. bdg_to_bigwig.sbatch
-12. merge_peak_files_by_pulldown.sbatch
-13. compute_bam_matrix.sbatch
+1. [bbduk.sbatch]()
+2. [fastqc.sbatch]()
+3. [multiqc.sbatch]()
+4. [bwa_mem.sbatch]()
+5. [merge_bams_histone_tf.sbatch]()
+6. [merge_bams_IgG.sbatch]()
+7. [subset_bam_by_length.sbatch]()
+8. [macs2_SE.sbatch]()
+9. [macs2_PE.sbatch]()
+10. [merge_peak_files.sbatch]()
+11. [bdg_to_bigwig.sbatch]()
+12. [merge_peak_files_by_pulldown.sbatch]()
+13. [compute_bam_matrix.sbatch]()
 14. deseq2.R (one supplied for each of four pulldowns)
 
 Required packages:
-* bbmap/38.05
-* fastqc/0.11.8
-* multiqc/1.7
-* bwa/0.7.15
-* samtools/1.10
-* bedtools/2.28.0
-* deeptools/3.5.1
-* MACS/2.1.1
-* deseq2/1.26.0
+* BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
+* FastQC v0.11.8 (https://github.com/s-andrews/FastQC)
+* MultiQC v1.7 (https://github.com/ewels/MultiQC)
+* BWA v0.7.15 (https://github.com/lh3/bwa)
+* Samtools v1.10 (http://www.htslib.org/)
+* bedtools v2.28.0 (http://bedtools.readthedocs.io/en/latest/)
+* deepTools v3.5.1 (https://deeptools.readthedocs.io/en/develop/index.html)
+* MACS v2.1.1 (https://pypi.org/project/MACS2/)
+* DESeq2 v1.26.0 (https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 
 For a list of all R packages used in this analysis, see session_info.txt.
 

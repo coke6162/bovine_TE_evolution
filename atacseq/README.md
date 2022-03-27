@@ -3,22 +3,22 @@ All bash scripts were written to be run using SLURM on the HPC cluster at the Un
 These scripts assume all samples are named as described sample_names.txt (column 2). For simplicity all input and output files are written to the same directory.
 
 A typical ATAC-seq workflow looks like this:
-1. bbduk.sbatch
-2. fastqc.sbatch
-3. multiqc.sbatch
-4. bowtie2.sbatch
-5. sambamba_markdup.sbatch
-6. macs2_PE.sbatch
-7. bdg_to_bigwig.sbatch
+1. [bbduk.sbatch]()
+2. [fastqc.sbatch]()
+3. [multiqc.sbatch]()
+4. [bowtie2.sbatch]()
+5. [sambamba_markdup.sbatch]()
+6. [macs2_PE.sbatch]()
+7. [bdg_to_bigwig.sbatch]()
 
 Required packages:
-* bbmap/38.05
-* fastqc/0.11.8
-* multiqc/1.7
-* bowtie2/2.2.9
-* samtools/1.10
-* sambamba/0.6.9
-* MACS/2.1.1
+* BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
+* FastQC v0.11.8 (https://github.com/s-andrews/FastQC)
+* MultiQC v1.7 (https://github.com/ewels/MultiQC)
+* Bowtie2 v2.2.9 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+* Samtools v1.10 (http://www.htslib.org/)
+* Sambamba v0.6.9 (https://lomereiter.github.io/sambamba/)
+* MACS v2.1.1 (https://pypi.org/project/MACS2/)
 
 Note that the soft masked bosTau9 assembly and RefSeq gene annotation files may be downloaded through UCSC:
 * bosTau9 - http://hgdownload.soe.ucsc.edu/goldenPath/bosTau9/bigZips/bosTau9.fa.gz
