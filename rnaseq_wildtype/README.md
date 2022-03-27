@@ -3,13 +3,13 @@ All bash scripts were written to be run using SLURM on the HPC cluster at the Un
 These scripts assume all samples are named as described sample_names.txt (column 2). For simplicity all input and output files are written to the same directory.
 
 A typical RNAseq workflow looks like this:
-1. [bbduk.sbatch]()
-2. [fastqc.sbatch]()
-3. [multiqc.sbatch]()
-4. [hisat2.sbatch]()
-5. [bam_to_bigwig.sbatch]()
-6. [merge_bams.sbatch]()
-7. [featureCounts.sbatch]()
+1. [bbduk.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/bbduk.sbatch)
+2. [fastqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/fastqc.sbatch)
+3. [multiqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/multiqc.sbatch)
+4. [hisat2.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/hisat2.sbatch)
+5. [bam_to_bigwig.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/bam_to_bigwig.sbatch)
+6. [merge_bams.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/merge_bams.sbatch)
+7. [featureCounts.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/rnaseq_wildtype/featureCounts.sbatch)
 8. deseq2.R (one supplied for each of six datasets)
 
 Required packages:
