@@ -3,8 +3,8 @@ All bash scripts were written to be run using SLURM on the HPC cluster at the Un
 These scripts assume all samples are named as described in download_assemblies.sbatch. For simplicity all input and output files are written to the same directory.
 
 Run the scripts in the following order:
-1. [download_assemblies.sbatch]()
-2. [RepeatMasker.sbatch]() (via [run_RepeatMasker.sh]())
+1. [download_assemblies.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/MER41_reannotation/download_assemblies.sbatch)
+2. [RepeatMasker.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/MER41_reannotation/RepeatMasker.sbatch) (via [run_RepeatMasker.sh](https://github.com/coke6162/bovine_TE_evolution/blob/main/MER41_reannotation/run_RepeatMasker.sh))
 
 Required packages:
 * RepeatMasker v4.1.0 (https://www.repeatmasker.org/)
