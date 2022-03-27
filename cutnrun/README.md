@@ -3,20 +3,18 @@ All bash scripts were written to be run using SLURM on the HPC cluster at the Un
 These scripts assume all samples are named as described sample_names.txt (column 2). For simplicity all input and output files are written to the same directory.
 
 A typical CUT&RUN workflow looks like this:
-1. [bbduk.sbatch]()
-2. [fastqc.sbatch]()
-3. [multiqc.sbatch]()
-4. [bwa_mem.sbatch]()
-5. [merge_bams_histone_tf.sbatch]()
-6. [merge_bams_IgG.sbatch]()
-7. [subset_bam_by_length.sbatch]()
-8. [macs2_SE.sbatch]()
-9. [macs2_PE.sbatch]()
-10. [merge_peak_files.sbatch]()
-11. [bdg_to_bigwig.sbatch]()
-12. [merge_peak_files_by_pulldown.sbatch]()
-13. [compute_bam_matrix.sbatch]()
-14. deseq2.R (one supplied for each of four pulldowns)
+1. [bbduk.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/bbduk.sbatch)
+2. [fastqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/fastqc.sbatch)
+3. [multiqc.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/multiqc.sbatch)
+4. [bwa_mem.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/bwa_mem.sbatch)
+5. [merge_bams_histone_tf.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/merge_bams_histone_tf.sbatch) and [merge_bams_IgG.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/merge_bams_IgG.sbatch)
+6. [subset_bam_by_length.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/subset_bam_by_length.sbatch)
+7. [macs2_SE.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/macs2_SE.sbatch) and [macs2_PE.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/macs2_PE.sbatch)
+8. [merge_peak_files.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/merge_peak_files.sbatch)
+9. [bdg_to_bigwig.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/bdg_to_bigwig.sbatch)
+10. [merge_peak_files_by_pulldown.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/merge_peak_files_by_pulldown.sbatch)
+11. [compute_bam_matrix.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/compute_bam_matrix.sbatch)
+12. [deseq2_H3K27ac.R](), [deseq2_POLR2A.R](), [deseq2_STAT1.R](), [deseq2_pSTAT1.R]()
 
 Required packages:
 * BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
