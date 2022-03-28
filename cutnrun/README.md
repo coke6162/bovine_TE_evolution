@@ -14,7 +14,7 @@ A typical CUT&RUN workflow looks like this:
 9. [bdg_to_bigwig.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/bdg_to_bigwig.sbatch)
 10. [merge_peak_files_by_pulldown.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/merge_peak_files_by_pulldown.sbatch)
 11. [compute_bam_matrix.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/compute_bam_matrix.sbatch)
-12. [deseq2_H3K27ac.R](), [deseq2_POLR2A.R](), [deseq2_STAT1.R](), [deseq2_pSTAT1.R]()
+12. [deseq2_H3K27ac.R](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/deseq2_H3K27ac.R), [deseq2_POLR2A.R](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/deseq2_POLR2A.R), [deseq2_STAT1.R](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/deseq2_STAT1.R), [deseq2_pSTAT1.R](https://github.com/coke6162/bovine_TE_evolution/blob/main/cutnrun/deseq2_pSTAT1.R)
 
 Required packages:
 * BBMap v38.05 (https://jgi.doe.gov/data-and-tools/bbtools/)
