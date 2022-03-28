@@ -63,7 +63,7 @@ nrow(dds)
 dds <- DESeq(dds)
 resultsNames(dds)
 
-# Get differential expression results & sort by ascending padj
+# Get differential expression results
 res <- results(dds, contrast=c("treatment", "IFNG_4h", "UT"))
 head(res)
 

@@ -26,3 +26,5 @@ List of programs used for all analyses.
 * Samtools v1.10 (http://www.htslib.org/)
 * SRA Toolkit v2.10.5 (https://github.com/ncbi/sra-tools)
 * Subread v1.6.2 (http://subread.sourceforge.net/)
+
+For the most up-to-date scripts, see https://github.com/coke6162/bovine_TE_evolution.
