@@ -1,6 +1,6 @@
 All bash scripts were written to be run using SLURM on the HPC cluster at the University of Colorado Boulder. Some scripts are written to be run in parallel as [job arrays](https://slurm.schedmd.com/job_array.html).
 
-These scripts assume all samples are named as described sample_names.txt (column 2). For simplicity all input and output files are written to the same directory.
+Accession numbers and corresponding sample names are provided in sample_names.txt. These scripts assume that all samples are named as described in sample_names.txt. For simplicity all input and output files are written to the same directory.
 
 A typical ATAC-seq workflow looks like this:
 1. [bbduk.sbatch](https://github.com/coke6162/bovine_TE_evolution/blob/main/atacseq/bbduk.sbatch)
