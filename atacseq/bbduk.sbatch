@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script for running bbduk with paired-end data
-# 'NexteraPE-PE.fa' supplied through github repos
+# 'adapters.fa' supplied through github repos
 
 # Example usage:
 # sbatch --array 0-3 bbduk.sbatch.sbatch
@@ -43,7 +43,7 @@ in1=${queries[$SLURM_ARRAY_TASK_ID]}_1.fastq.gz \
 in2=${queries[$SLURM_ARRAY_TASK_ID]}_2.fastq.gz \
 out1=${queries[$SLURM_ARRAY_TASK_ID]}_1_trimmed.fastq.gz \
 out2=${queries[$SLURM_ARRAY_TASK_ID]}_2_trimmed.fastq.gz \
-ref=NexteraPE-PE.fa \
+ref=adapters.fa \
 ktrim=r k=34 mink=11 hdist=1 tpe tbo \
 qtrim=r trimq=10 \
 t=${numThreads}
